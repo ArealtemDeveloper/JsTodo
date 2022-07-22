@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Monda', sans-serif;
+    background-color: #202020;
+
+}
+
+.todo {
+    padding: 5rem;
+    width: 100%;
+    
+    color: #ffffff;
+}
+
+.todo__container {
+    height: 100%;
+    width: 100%;
+}
+
+
+.todo__title {
+    margin-bottom: 2rem;
+    font-size: 5rem;
+}
+
+.todo__list {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+
+.todo__item {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+    
+}
+
+
+.todo__add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    cursor: pointer;
+}
+
+.todo__input {
+    width: 300px;
+    height: 40px;
+    margin-right: 1rem;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    color: #ffffff;
+    background-color: #202020;
+}
+
+.todo__task {
+    margin-right: 6rem;
+    user-select: none;
+}
+
+.todo__object {
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    display: flex;
+}
+
+
+.todo__delete {
+    margin-left: 5rem;
+    cursor: pointer;
+}
+
+.crosslined {
+    text-decoration: line-through;
+    color: #545454;
+}
+
+.todo__checkbox {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+}
+
+.custom__checkbox {
+    position: relative;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background: #7950F2;;
+    border: 2px solid #202020;
+    border-radius: 50%;
+    vertical-align: sub;
+    margin-right: 5px;
+    
+}
+
+.custom__checkbox::before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+
+    background-image: url("./assets/icons/checked.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    transition: 0.1s ease-in;
+}
+
+
+.todo__checkbox:checked + .custom__checkbox::before {
+    transform: translate(-50%,-50%) scale(1);
+}

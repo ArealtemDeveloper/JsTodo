@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Monda:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <title>ToDo List</title>
+</head>
+<body>
+    <div class="todo">
+        <h1 class="todo__title">ToDo List</h1>
+        <div class="todo__container">
+            <div class="todo__add">
+                <input  class="todo__input" type="text" placeholder="Введите название заметки">
+                <img class="add__btn" src="./assets/icons/addTodo.svg" alt="add">
+            </div>
+            <ul class="todo__list">
+                <div class="todo__item">
+                    <div class="todo__object">
+                        <label>
+                            <input class="todo__checkbox" type="checkbox">
+                             <span class="custom__checkbox"></span>
+                            <li class="todo__task">Прочитать книгу до конца</li>
+                        </label>
+                    </div>
+                    <div class="todo__delete">
+                        <img class="delete__btn" src="./assets/icons/deleteTodo.svg" alt="delete">
+                    </div>
+                </div>
+                <div class="todo__item">
+                    <div class="todo__object">
+                        <label>
+                            <input class="todo__checkbox" type="checkbox">
+                            <span class="custom__checkbox"></span>
+                            <li class="todo__task">Изучить асихнронный JS</li>
+                        </label>
+                    </div>
+                    <div class="todo__delete">
+                        <img class="delete__btn" src="./assets/icons/deleteTodo.svg" alt="delete">
+                    </div>
+                </div>
+                <div class="todo__item">
+                    <div class="todo__object">
+                        <label>
+                            <input class="todo__checkbox" type="checkbox">
+                            <span class="custom__checkbox"></span>
+                            <li class="todo__task">Выбрать новые направления для изучения</li>
+                        </label>
+                    </div>
+                    <div class="todo__delete">
+                        <img class="delete__btn" src="./assets/icons/deleteTodo.svg" alt="delete">
+                    </div>
+                </div>
+            </ul>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
